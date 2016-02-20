@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zmck="http://schemas.android.com/apk/res/c.zmck.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/tv_title"
+        android:text="设置中心" />
+
+    <c.zmck.view.SettingItemView
+        android:id="@+id/auto_update"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        zmck:settingTitle="自动更新设置"
+        android:layout_marginTop="8dp"
+        zmck:settingBG="top"
+        />
+    <c.zmck.view.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        zmck:settingTitle="拦截骚扰"
+        zmck:settingBG="middle"
+        zmck:isChecked="true"
+        />
+    <c.zmck.view.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        zmck:settingTitle="这个随便"
+        zmck:settingBG="bottom"
+        zmck:isChecked="true"
+        />
+    
+    
+</LinearLayout>

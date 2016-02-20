@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView 
+        android:id="@+id/tv_setting_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="shishi"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_settingitem_top"
+        android:textSize="18sp"
+        android:clickable="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/iv_setting_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="22dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

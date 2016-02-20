@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机卫士</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="admin_label">山寨的手机卫士</string>
+    <string name="admin_des">山寨手机卫士可能有毒，小心使用，会变砖的</string>
+
+</resources>

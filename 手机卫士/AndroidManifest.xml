@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="c.zmck.mobilesafe"
+    android:versionCode="3"
+    android:versionName="手机卫士" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        -->
+        <activity
+            android:name="c.zmck.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="c.zmck.activity.HomeActivity"
+            android:label="主页" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingActivity"
+            android:label="设置界面" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingGuide1Activity"
+            android:label="设置向导" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingGuide2Activity"
+            android:label="设置向导" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingGuide3Activity"
+            android:label="设置向导" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingGuide4Activity"
+            android:label="设置向导" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SettingGuide5Activity"
+            android:label="设置向导" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.SelectSafeNumActivity"
+            android:label="选择安全号码" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.BlackListActivity"
+            android:label="骚扰拦截" >
+        </activity>
+        <activity
+            android:name="c.zmck.activity.AddBlackActivity"
+            android:label="添加骚扰号码" >
+        </activity>
+        <!-- 设备管理员receiver注册 -->
+		<receiver
+            android:name="c.zmck.receiver.SafeAdminReceiver"
+            android:description="@string/admin_des"
+            android:label="@string/admin_label"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

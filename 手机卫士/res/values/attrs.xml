@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="settingItemStyle">
+        <attr name="settingTitle" format="string|reference" />
+        <attr name="settingBG" format="reference" >
+            <enum name="top" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="isChecked" format="boolean" />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView 
+        style="@style/tv_title"
+        android:text="骚扰拦截"
+        />
+    
+    <ImageView 
+        android:id="@+id/iv_add_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_add_black"
+        android:layout_alignParentRight="true"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        />
+	</RelativeLayout>
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    
+    <ListView 
+        android:id="@+id/lv_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    
+    <ProgressBar 
+        android:id="@+id/pb_blacklist_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/rotate_loading"
+        />	
+        
+    <ImageView 
+        android:id="@+id/iv_black_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/empty"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    
+    </RelativeLayout>
+</LinearLayout>

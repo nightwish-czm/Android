@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bkg"
+        >
+        
+        <ImageView 
+            android:id="@+id/iv_heima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山寨手机卫士"
+            android:textSize="22sp"
+            android:textColor="#435634"
+            android:layout_toRightOf="@id/iv_heima"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="10dp"
+            />
+        
+        <c.zmck.view.EllipsizeTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是一个山寨的手机卫士，不怕手机变砖就用吧:-D"
+            android:textColor="#56423451"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_toRightOf="@id/iv_heima"
+            android:layout_below="@id/tv_title"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/selector_setting"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+    <GridView 
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginTop="10dp"
+        ></GridView>
+    
+
+</LinearLayout>

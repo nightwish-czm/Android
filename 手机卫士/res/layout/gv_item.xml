@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp" 
+    android:background="@drawable/antispam_report_button"
+    >
+    
+	<ImageView 
+	    android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/gv_item_image"
+	    android:src="@drawable/cygj"
+	    />
+	
+	<TextView 
+	    android:id="@+id/gv_item_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="什么鬼"
+	    android:textSize="22sp"
+	    android:layout_toRightOf="@id/gv_item_image"
+	    android:layout_alignTop="@id/gv_item_image"
+	    android:layout_marginLeft="5dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/gv_item_describe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="还是什么鬼"
+	    android:layout_alignLeft="@+id/gv_item_title"
+	    android:layout_alignBottom="@+id/gv_item_image"
+	    android:layout_marginTop="5dp"
+	    />
+	
+</RelativeLayout>
